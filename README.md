@@ -9,4 +9,4 @@ In this repository I have created different directories for each of them to docu
 
 
 #### Quick Links to the Sections
-[ELK Stack](ELK Stack/README.md)
+[ELK Stack](https://github.com/arinjay97/IIC-Internship/tree/master/ELK%20Stack)
