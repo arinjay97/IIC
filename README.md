@@ -7,7 +7,6 @@ I have worked in 3 major areas during my internship:
 
 In this repository I have created different directories for each of them to document the work that I did.
 
-```
-Quick Links
-[ELK Stack](https://github.com/arinjay97/IIC-Internship/tree/master/ELK%20Stack)
-```
+
+#### Quick Links to the Sections
+> [ELK Stack](ELK Stack/README.md)
