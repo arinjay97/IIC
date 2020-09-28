@@ -33,10 +33,13 @@ sudo systemctl start elasticsearch
 sudo systemctl start kibana
 ```
 9. Navigate to [local Elasticsearch instance](localhost:9200) on a browser to check if Elasticsearch is working or not.
+
 ![ES in browser](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/ES.jpg)
-If this is visible, then the service is running properly.
+
+>If this is visible, then the service is running properly.
 
 10. Navigate to [Kibana on browser](localhost:5601) on a browser to access the Console and start with analysis and visualizations
+
 ![Kibana in browser](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Kibana.jpg)
 
 ### To install on Amazon Linux 2:
