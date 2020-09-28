@@ -9,4 +9,4 @@ In this repository I have created different directories for each of them to docu
 
 ```
 Quick Links
-- [ELK Stack](/IIC-Internship/tree/master/ELK%20Stack)
+- [ELK Stack](ELK Stack/README.md)
