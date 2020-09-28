@@ -1,5 +1,5 @@
 ### To install on Amazon Linux 2:
-##### This method uses different EC2 instances each running a different service
+##### This method uses 3 different EC2 instances each running a different service
 
 1. Login to EC2 console and launch 3 instances with the following configurations (at minimum)
   a. For Elasticsearch: t2.micro
