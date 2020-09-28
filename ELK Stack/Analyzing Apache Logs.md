@@ -7,4 +7,4 @@ The Logstash configuration file consists of 3 sections:
 2. Filter - This is where the parsing of the log to get information from them is specified
 3. Output - Where the log data is to be stored after parsing
 
-k
+![Apache Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Apache%20Logs%20Dashboard.png)
