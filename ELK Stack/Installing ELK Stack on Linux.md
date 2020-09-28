@@ -32,8 +32,9 @@ sudo apt-get update && sudo apt-get install logstash
 sudo systemctl start elasticsearch
 sudo systemctl start kibana
 ```
-9. Navigate to localhost:9200 on a browser to check if Elasticsearch is working or not.
+9. Navigate to [local Elasticsearch instance](localhost:9200) on a browser to check if Elasticsearch is working or not.
 
+(https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/ES.jpg)
 
 ### To install on Amazon Linux 2:
 ##### This method uses different EC2 instances each running a different service
