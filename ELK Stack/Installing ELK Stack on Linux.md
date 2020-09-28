@@ -1,6 +1,6 @@
 # INSTALLATION STEPS
 
-### To install on a Debian System (like Ubuntu):
+### To install locally on a Debian System:
 1. Download and install the public signing key
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
@@ -39,6 +39,3 @@ sudo systemctl start kibana
 10. Navigate to [Kibana on browser](localhost:5601) on a browser to access the Console and start with analysis and visualizations
 
 ![Kibana in browser](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Kibana.jpg)
-
-### To install on Amazon Linux 2:
-##### This method uses different EC2 instances each running a different service
