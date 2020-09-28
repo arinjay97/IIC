@@ -147,4 +147,4 @@ http.port: 9600-9700
 #
 ```
 
-####The ELK Stack has been fully deployed. Logs can be sent from Logstash to Elasticsearch and then be visualized and analyzed in Kibana
+#### The ELK Stack has been fully deployed. Logs can be sent from Logstash to Elasticsearch and then be visualized and analyzed in Kibana
