@@ -19,3 +19,39 @@ The Logstash configuration file consists of 3 sections:
 1. Input - Where the log data will be taken from
 2. Filter - This is where the parsing of the log to get information from them is specified
 3. Output - Where the log data is to be stored after parsing
+
+The configuration file that can be used for parsing Apache server logs and sending them to Elasticsearch is as follows:
+
+```config
+input {
+  file {
+    path => "<APACHE LOGS PATH>"
+  }
+}
+
+filter {
+  grok {
+    match => { "message" => "%{COMBINEDAPACHELOG}" }
+  }
+  date {
+    match => [ "timestamp" , "dd/MMM/yyyy:HH:mm:ss Z" ]
+  }
+  geoip {
+      source => "clientip"
+  }
+}
+
+output {
+  elasticsearch {
+		hosts => [<ELASTICSEARCH URL>]
+		index => "<INDEX NAME>"
+	}
+}
+```
+
+Once this file is created, save it with a `.conf` extension. To run logstash with the above configuration run the following command in terminal
+```bash
+/usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>
+```
+
+The `-f` allows us to specify which configuration file to use to run Logstash.
