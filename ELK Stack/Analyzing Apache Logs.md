@@ -54,4 +54,8 @@ Once this file is created, save it with a `.conf` extension. To run logstash wit
 /usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>
 ```
 
-The `-f` allows us to specify which configuration file to use to run Logstash.
+The `-f` allows us to specify which configuration file to use to run Logstash. An index will be created in Elasticsearch with the specified name
+
+Leaving the service running will add new log entries to the Elasticsearch index in real time. 
+
+View the index in Kibana by navigating to `Stack Management > Index Management` section. To enable visualizing and querying using Kibana, an Index Pattern has to be created for the corresponding Elasticsearch index. 
