@@ -7,7 +7,7 @@ For example, to filter only “error” level log messages, the following query 
 filter @message like 'error'
 ```
 
-![Insights Error](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20-%20error.jpg)
+![Insights Error](/screenshots/Insights%20-%20error.jpg)
 **We can similarly filter out different log levels by replacing error with info or warning.**
 
 In order to parse the log message and gain custom fields we can use glob expressions along with the query syntax
@@ -25,7 +25,7 @@ We can use the query
 
 As the first value in square brackets is the ip, it will be parsed and another field be made by the name of ip containing the value as seen below
 
-![Insights IP](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20-%20ip.jpg)
+![Insights IP](/screenshots/Insights%20-%20ip.jpg)
 
 To get the count of a field and sort it and get the top 10 values with highest coun, use **stats count(\*)** query
 For example to get the top 10 User Agents from info logs use the query as follows 
@@ -42,7 +42,7 @@ fields @message
 
 The query results in this
 
-![Top 10 User Agents](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20-%20Top%2010%20user%20agents.jpg)
+![Top 10 User Agents](/screenshots/Insights%20-%20Top%2010%20user%20agents.jpg)
 
 To Visualize warning logs as a function of time we can use the **stats count by bin**. This will plot the timestamps where warning logs were ingested to CloudWatch on a time interval specified.
 
@@ -54,11 +54,11 @@ fields @message
 
  The above query will result in the following graph:
  
- ![Insights Graph](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20-%20Graph.jpg)
+ ![Insights Graph](/screenshots/Insights%20-%20Graph.jpg)
  
  
 ### DASHBOARDS
  
 Dashboards are customizable home pages where information can be viewed by just a glance, we can add any metric, custom query or visualization in this and view the results on any particular time field. Example of a dashboard created for Yii2 Basic Application can be seen below
 
-![Insights Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20Dashboard.png)
+![Insights Dashboard](/screenshots/Insights%20Dashboard.png)
