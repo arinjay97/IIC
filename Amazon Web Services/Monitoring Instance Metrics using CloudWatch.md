@@ -140,6 +140,6 @@ Here the percentage of memory used by the instance is being shown as a function 
 The kind of graph that can be selected are Line, Stacked Area or Number. The line and stacked area graphs show the value of the metric over a time period, whereas the number shows the current value of the metric.
 
 
-5. The graphs can be added to a Dashboard very easily to view easily at a glance as seen in this Yii2 basic application dashboard at the bottom
+5. The graphs can be added to a Dashboard very easily to view easily at a glance as seen in this dashboard
 
 ![Insights Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20Dashboard%20Metrics.png)
