@@ -68,3 +68,6 @@ To be able to view in Kibana and create visualizations, we need to create an Ind
 
 ![Index Pattern](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Index%20created%20for%20Kibana.png)
 
+Now the logs are ready to be viewed by us for analysis as well as being used to create visualizations, and after that a dashboard in Kibana. In the `Kibana -> Discover` section in the main menu, on selecting the apache index pattern just created, we will be able to view at the parsed and stored logs.
+
+![Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Discover%20Apache.png)
