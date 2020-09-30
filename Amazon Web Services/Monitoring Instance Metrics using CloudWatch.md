@@ -142,4 +142,4 @@ The kind of graph that can be selected are Line, Stacked Area or Number. The lin
 
 5. The graphs can be added to a Dashboard very easily to view easily at a glance as seen in this Yii2 basic application dashboard at the bottom
 
-![Insights Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20Dashboard.png)
+![Insights Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20Dashboard%20Metrics.png)
