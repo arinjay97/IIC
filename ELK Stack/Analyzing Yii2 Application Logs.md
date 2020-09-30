@@ -113,9 +113,9 @@ After Logstash adds all log entries to Elasticsearch, the index is created and v
 
 For example, using the loglevel field, we can filter logs to see only those which are either Warning or either Info. The document will be visible as follows
 
-![Info Logs Discover](/master/screenshots/Info%20Yii2.png)
+![Info Logs Discover](/screenshots/Info%20Yii2.png)
 
-![Warning Logs Discover](/master/screenshots/Warning%20Yii2.png)
+![Warning Logs Discover](/screenshots/Warning%20Yii2.png)
 
 Every field from the info and warning logs have been parsed and stored seperately. Kibana Query Language (KQL) can be used to query the documents stored in the index pattern.
 
