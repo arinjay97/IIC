@@ -41,3 +41,19 @@ sudo mv composer.phar /usr/bin/composer
 composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ```
 This command should be run in the `/var/www/html` directory.
+
+6. To configure Apache to serve the homepage of the application, a virtual host configuration has to be created. The virtual host needs to be created in the `/etc/httpd/conf.d` directory. To host the Yii2 application as the landing page of the Apache server, create a **vh.conf** file with the following content
+```conf
+<VirtualHost *:80>
+    ServerAdmin <SERVER_ADMIN>
+    DocumentRoot "/var/www/html/basic/web/"
+    ServerName <SERVER_NAME>
+    ErrorLog "<ERROR_LOG_NAME>"
+    CustomLog "<CUSTOM_LOG_NAME>" common
+
+    <FilesMatch \.php$>
+      SetHandler "proxy:unix:/var/run/php-fpm/www.sock|fcgi://localhost"
+    </FilesMatch>
+
+</VirtualHost>
+```
