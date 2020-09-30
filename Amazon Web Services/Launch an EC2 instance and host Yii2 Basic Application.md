@@ -57,3 +57,15 @@ This command should be run in the `/var/www/html` directory.
 
 </VirtualHost>
 ```
+
+7. Start the Apache web server by running the command
+```bash
+sudo service httpd start
+```
+
+8. The virtual host configuration will serve the Yii2 Application using PHP-FPM as the handler on the public IPv4 address of the instance.
+
+### VIEW THE APPLICATION 
+To view the application on a browser, navigate to the public IPv4 address or the public IPv4 DNS of the instance and the Yii2 application homepage should be visible.
+
+![Yii2 Application hosted on Apache Server home page of EC2 instance with php-fpm](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Yii2%20EC2.jpg)
