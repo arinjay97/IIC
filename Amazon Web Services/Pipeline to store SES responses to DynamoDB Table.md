@@ -28,6 +28,6 @@ SES -> SNS -> AWS Lambda -> DynamoDB
     -Complaints
     -Deliveries
 
-![SNS Config](/screenshots/Metrics.png)
+![SNS Config](/screenshots/SNS%20config.png)
 
 SES is now connected to the SNS topic. Whenever an email is sent from the verified email address, the response notification is sent to the SNS topic.
