@@ -34,8 +34,8 @@ sudo systemctl start kibana
 ```
 9. Navigate to [local Elasticsearch instance](localhost:9200) on a browser to check if Elasticsearch is working or not. If this is visible, then the service is running properly.
 
-![ES in browser](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/ES.jpg)
+![ES in browser](/screenshots/ES.jpg)
 
 10. Navigate to [Kibana on browser](localhost:5601) on a browser to access the Console and start with analysis and visualizations
 
-![Kibana in browser](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Kibana.jpg)
+![Kibana in browser](/screenshots/Kibana.jpg)
