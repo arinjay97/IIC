@@ -16,7 +16,7 @@ Once it is installed, visit `localhost/basic/web` to generate logs for the appli
 For more information about Yii2 Logging, visit [Yii2 Documentation](https://www.yiiframework.com/doc/guide/2.0/en/runtime-logging)
 
 As there are 3 different log levels inside the file, we will have to create a custom grok filter to parse and extract required fields.
-The supported grok patterns can be seen at [Grok patterns](https://github.com/arinjay97/IIC-Internship/blob/master/ELK%20Stack/Grok%20Patterns)
+The supported grok patterns can be seen at [Grok patterns](/ELK%20Stack/Grok%20Patterns)
 
 The pipeline being used here is the same as the one for Apache logs,
 
@@ -113,16 +113,16 @@ After Logstash adds all log entries to Elasticsearch, the index is created and v
 
 For example, using the loglevel field, we can filter logs to see only those which are either Warning or either Info. The document will be visible as follows
 
-![Info Logs Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Info%20Yii2.png)
+![Info Logs Discover](/master/screenshots/Info%20Yii2.png)
 
-![Warning Logs Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Warning%20Yii2.png)
+![Warning Logs Discover](/master/screenshots/Warning%20Yii2.png)
 
 Every field from the info and warning logs have been parsed and stored seperately. Kibana Query Language (KQL) can be used to query the documents stored in the index pattern.
 
 For example, if the query `error_code.keyword : "400"` is run, it returns all the documents that have the error_code fields value as 400. 
 As the error_code field only exists in loglevel error, only the error log entries with code 400 are returned as the result to the query as seen below. Each document can be expanded to see the entire log error message.
 
-![Error KQL](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Error%20KQL.png)
+![Error KQL](/screenshots/Error%20KQL.png)
 
 To create visualizations, head to the `Kibana -> Visualize` section
 
@@ -133,12 +133,12 @@ To create a visualization, select the type of visualization to create. To create
 
 This will create the following visualization
 
-![Loglevel Visualization](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Pie%20Chart%20Visualize.png)
+![Loglevel Visualization](/screenshots/Pie%20Chart%20Visualize.png)
 
 On selecting different keywords in the Field menu will create visualizations on different fields such as error_code, HTTP_HOST and more. They can be created in the different visualizations offered by Kibana such as Bar Graphs, data tables and more.
 
 To get visualization with particular details, such as for only a particular value of a field, KQL can be used to create visualizations as well. An example can be seen below
 
-![KQL Visualization](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/KQL%20VIsualization%20Data%20Table.png)
+![KQL Visualization](/screenshots/KQL%20VIsualization%20Data%20Table.png)
 
 The visualizations can then be organized into a dashboard to view all the information at a single glance. In the dashboard we can also select the time frame to view log entries only from that time period
