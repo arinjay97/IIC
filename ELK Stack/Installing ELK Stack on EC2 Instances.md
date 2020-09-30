@@ -6,7 +6,7 @@
   b. For Kibana: t2.micro
   c. For Logstash: t3a.small (Requires more RAM than Elasticsearch and Kibana)
 
-2. Login to the Elasticsearch instance via SSH 
+2. Login to the Elasticsearch EC2 instance instance via SSH 
   - Using terminal for Linux
   ```
    ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
@@ -55,7 +55,7 @@ sudo systemctl start elasticsearch.service
 ```
 To verify if the service is running properly, navigate to `<Public IPv4 address>:9200`
 
-8. Login to the Kibana instance via SSH
+8. Login to the Kibana EC2 instance via SSH
  - Using terminal for Linux
   ```
    ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
@@ -92,7 +92,7 @@ elasticsearch.hosts: ["http://<Public IPv4 Address of Elasticsearch EC2 Instance
 
 13. Navigate to `<Public IPv4 of Kibana EC2 Instance>:5601` on a browser to see the Kibana UI.
 
-14. Login to the Logstash instance via SSH
+14. Login to the Logstash EC2 instance via SSH
  - Using terminal for Linux
   ```
    ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
