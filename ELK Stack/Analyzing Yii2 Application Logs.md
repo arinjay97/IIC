@@ -108,3 +108,13 @@ output {
 Once this file is created, save it with a .conf extension. To run logstash with the above configuration run the following command in terminal
 
 `/usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>`
+
+After Logstash adds all log entries to Elasticsearch, the index is created and visible in Kibana. To view the logs and create visualizations we need an index pattern in Kibana. Once that is created the logs can be viewed in the `Kibana -> Discover` section. Using the available fields section, we can filter the logs based on their value.
+
+For example, using the loglevel field, we can filter logs to see only those which are either Warning or either Info. The document will be visible as follows
+
+![Info Logs Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Info%20Yii2.png)
+
+![Warning Logs Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Warning%20Yii2.png)
+
+Every field from the info and warning logs have been parsed and stored seperately. Kibana Query Language (KQL) can be used to query the documents stored in the index pattern.
