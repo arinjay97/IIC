@@ -46,9 +46,11 @@ The query results in this
 
 To Visualize warning logs as a function of time we can use the **stats count by bin**. This will plot the timestamps where warning logs were ingested to CloudWatch on a time interval specified.
 
+```sql
 fields @message
    | filter @message like /warning/
    | stats count(*) as Count by bin(12h)
+```
 
  The above query will result in the following graph:
  
