@@ -60,13 +60,17 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 9. This will start the agent and create the log stream and log group to subsequently store the Yii2 application logs. This can be viewed at the [Cloudwatch Management Console](https://ap-south-1.console.aws.amazon.com/cloudwatch/home)
 
 The Log Group can be viewed by selecting it in the side menu
+
 ![Log Groups](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Log%20Groups.jpg)
 
 The Log Stream can be selected
+
 ![Log Streams](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Log%20Streams.jpg)
 
 Inside the Log Stream, all the log messages can be viewed in the Log Events section
+
 ![Log Events](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Log%20Events.jpg)
 
 The log messages can be expanded to see their entire content
+
 ![Log Messages](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Cloudwatch%20Log%20Message.jpg)
