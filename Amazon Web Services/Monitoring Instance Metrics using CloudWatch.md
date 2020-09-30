@@ -12,7 +12,7 @@ sudo yum install -y collectd
 To monitor the metrics collected by collectD using CloudWatch, the configuration file for CloudWatch needs to be updated as well. This can be achieved in 2 ways:
 
 ### METHOD A
-1. Follow steps 1-4 mentioned for installing and running the CloudWatch Agent [earlier](https://github.com/arinjay97/IIC-Internship/blob/master/Amazon%20Web%20Services/Store%20Yii2%20application%20logs%20in%20Cloudwatch%20for%20analysis%20and%20visualization.md).
+1. Follow steps 1-4 mentioned for installing and running the CloudWatch Agent [earlier](/Amazon%20Web%20Services/Store%20Yii2%20application%20logs%20in%20Cloudwatch%20for%20analysis%20and%20visualization.md).
 
 2. When prompted to collect metrics with collectD by the configuration agent wizard, select YES
 
@@ -104,7 +104,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 ### METHOD B
 
-1. Follow steps 1-7 mentioned for installing and running the CloudWatch Agent [earlier](https://github.com/arinjay97/IIC-Internship/blob/master/Amazon%20Web%20Services/Store%20Yii2%20application%20logs%20in%20Cloudwatch%20for%20analysis%20and%20visualization.md).
+1. Follow steps 1-7 mentioned for installing and running the CloudWatch Agent [earlier](/Amazon%20Web%20Services/Store%20Yii2%20application%20logs%20in%20Cloudwatch%20for%20analysis%20and%20visualization.md).
 
 2. Manually update the config.json file by adding the metrics section and all the required metrics to be monitored as shown in above example config file.
 
@@ -125,11 +125,11 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 2. Select the Metrics option on the left hand menu to open the page as seen below to view all metrics
 
-![Metrics](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Metrics.png)
+![Metrics](/screenshots/Metrics.png)
 
 3. Select CWAgent in the Custom Namespaces. Here the metrics divided into what they are monitoring. There is a group for disk metrics, a group for CPU metrics, for disk IO metrics and a group for memory and swap metrics. There may be more or less depending on the configuration done.
 
-![CWAgent Metrics](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/CWAgent%20Metrics.png)
+![CWAgent Metrics](/screenshots/CWAgent%20Metrics.png)
 
 4. Select the group for the metric to be monitored and select the particular metric to be monitored. It will be displayed on the graph for specified time period as seen below:
 
@@ -142,4 +142,4 @@ The kind of graph that can be selected are Line, Stacked Area or Number. The lin
 
 5. The graphs can be added to a Dashboard very easily to view easily at a glance as seen in this dashboard
 
-![Insights Dashboard](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Insights%20Dashboard%20Metrics.png)
+![Insights Dashboard](/screenshots/Insights%20Dashboard%20Metrics.png)
