@@ -29,24 +29,24 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
 7. Select NO when added log file and exit the wizard. The following config.json file is created at /opt/aws/amazon-cloudwatch-agent/bin/
 ```json
 {
-     "agent": {
-             "run_as_user": "cwagent",
-             "region": "ap-south-1",
-             "debug": true
+"agent": {
+     "run_as_user": "cwagent",
+     "region": "ap-south-1",
+     "debug": true
      },
-     "logs": {
-             "logs_collected": {
-             "files": {
-                      "collect_list": [
-                                      {
-                                       "file_path": "/var/www/html/basic/runtime/logs/app.log",
-                                       "log_group_name": "yii2/multiline",
-                                       "log_stream_name": "{instance_id}",
-                                       "multi_line_start_pattern": "[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1]) (2[0-3]|[01][0-9]):[0-5][0-9]"
-                                     }
-                             ]
-                     }
+"logs": {
+     "logs_collected": {
+     "files": {
+          "collect_list": [
+               {
+               "file_path": "/var/www/html/basic/runtime/logs/app.log",
+               "log_group_name": "yii2/multiline",
+               "log_stream_name": "{instance_id}",
+               "multi_line_start_pattern": "[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[1-2][0-9]|3[0-1]) (2[0-3]|[01][0-9]):[0-5][0-9]"
+               }
+               ]
              }
+          }
      }
 }
 ```
