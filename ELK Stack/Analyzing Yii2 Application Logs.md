@@ -133,4 +133,4 @@ To create a visualization, select the type of visualization to create. To create
 
 This will create the following visualization
 
-![Loglevel Visualization](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Pie Chart Visualize.png)
+![Loglevel Visualization](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Pie%20Chart%20Visualize.png)
