@@ -118,3 +118,19 @@ For example, using the loglevel field, we can filter logs to see only those whic
 ![Warning Logs Discover](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Warning%20Yii2.png)
 
 Every field from the info and warning logs have been parsed and stored seperately. Kibana Query Language (KQL) can be used to query the documents stored in the index pattern.
+
+For example, if the query `error_code.keyword : "400"` is run, it returns all the documents that have the error_code fields value as 400. 
+As the error_code field only exists in loglevel error, only the error log entries with code 400 are returned as the result to the query as seen below. Each document can be expanded to see the entire log error message.
+
+![Error KQL](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Error%20KQL.png)
+
+To create visualizations, head to the `Kibana -> Visualize` section
+
+To create a visualization, select the type of visualization to create. To create a Pie Chart, select the Pie Chart option. The easiest way to get a visualization is to follow the steps below:
+1. Select **Split Slices** in the Buckets section.
+2. Select **Terms** in Aggregation. This will allow us to select a field to visualize later.
+3. Select **loglevel.keyword** in Field and press on Update.
+
+This will create the following visualization
+
+![Loglevel Visualization](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Pie Chart Visualize.png)
