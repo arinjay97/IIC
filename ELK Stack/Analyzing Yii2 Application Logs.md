@@ -105,3 +105,6 @@ output {
 }
 ```
 
+Once this file is created, save it with a .conf extension. To run logstash with the above configuration run the following command in terminal
+
+`/usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>`
