@@ -15,7 +15,7 @@ SES -> SNS -> AWS Lambda -> DynamoDB
 
 2. Select **Verify a New Email Address** and enter an email of choice.
 
-![SES Console]()
+![SES Console](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/SES%20console.png)
 
 3. Login to the [SNS Console](https://ap-south-1.console.aws.amazon.com/sns/v3/home?region=ap-south-1#/topics) and select `Topic -> Create a new Topic`
 
@@ -28,6 +28,6 @@ SES -> SNS -> AWS Lambda -> DynamoDB
     -Complaints
     -Deliveries
 
-![SNS Config]()
+![SNS Config](/screenshots/Metrics.png)
 
 SES is now connected to the SNS topic. Whenever an email is sent from the verified email address, the response notification is sent to the SNS topic.
