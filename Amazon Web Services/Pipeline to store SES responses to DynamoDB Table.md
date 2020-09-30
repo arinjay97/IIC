@@ -15,7 +15,7 @@ SES -> SNS -> AWS Lambda -> DynamoDB
 
 2. Select **Verify a New Email Address** and enter an email of choice.
 
-![SES Console](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/SES%20console.png)
+![SES Console](/screenshots/SES%20console.png)
 
 3. Login to the [SNS Console](https://ap-south-1.console.aws.amazon.com/sns/v3/home?region=ap-south-1#/topics) and select `Topic -> Create a new Topic`
 
