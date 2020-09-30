@@ -59,3 +59,12 @@ The `-f` allows us to specify which configuration file to use to run Logstash. A
 Leaving the service running will add new log entries to the Elasticsearch index in real time. 
 
 View the index in Kibana by navigating to `Stack Management > Index Management` section. To enable visualizing and querying using Kibana, an Index Pattern has to be created for the corresponding Elasticsearch index. 
+
+The index created by Logstash can be seen as here
+
+![Index Management](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Index%20Created%20by%20Logstash.png)
+
+To be able to view in Kibana and create visualizations, we need to create an Index Pattern in Kibana for the Elasticsearch index. This can be done in the `Kibana -> Index Patterns` section. Once an index pattern is created, the fields inside of it can be seen as below:
+
+![Index Pattern](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Index%20created%20for%20Kibana.png)
+
