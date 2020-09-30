@@ -67,3 +67,6 @@ The Log Stream can be selected
 
 Inside the Log Stream, all the log messages can be viewed in the Log Events section
 ![Log Events](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Log%20Events.jpg)
+
+The log messages can be expanded to see their entire content
+![Log Messages](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Cloudwatch%20Log%20Message.jpg)
