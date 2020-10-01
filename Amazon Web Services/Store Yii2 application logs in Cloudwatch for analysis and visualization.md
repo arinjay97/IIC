@@ -7,7 +7,7 @@ A log group and log stream have to be created in Cloudwatch. This is where the a
 
 1. Download CloudWatch agent package. The package varies for every different instance platform and the link can be found at [Cloudwatch Agent Package Download](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/download-cloudwatch-agent-commandline.html) AWS documentation.
 
-2. AsAmazon Linux 2 AMI is being used, run the following command
+2. As Amazon Linux 2 AMI is being used, run the following command
 ```bash
 sudo wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
 ```
@@ -61,16 +61,16 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 The Log Group can be viewed by selecting it in the side menu
 
-![Log Groups](/screenshots/Log%20Groups.jpg)
+![Log Groups](/screenshots/Amazon%20Web%20Services/Log%20Groups.jpg)
 
 The Log Stream can be selected
 
-![Log Streams](/screenshots/Log%20Streams.jpg)
+![Log Streams](/screenshots/Amazon%20Web%20Services/Log%20Streams.jpg)
 
 Inside the Log Stream, all the log messages can be viewed in the Log Events section
 
-![Log Events](/screenshots/Log%20Events.jpg)
+![Log Events](/screenshots/Amazon%20Web%20Services/Log%20Events.jpg)
 
 The log messages can be expanded to see their entire content
 
-![Log Messages](/screenshots/Cloudwatch%20Log%20Message.jpg)
+![Log Messages](/screenshots/Amazon%20Web%20Services/Cloudwatch%20Log%20Message.jpg)

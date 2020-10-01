@@ -54,7 +54,7 @@ More details can be found on what exactly the different levels monitor at [colle
                         },
                         "disk": {
                                 "measurement": [
-										 "used_percent",
+					"used_percent",
                                         "inodes_free"
                                 ],
                                 "metrics_collection_interval": 60,
@@ -125,15 +125,15 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 2. Select the Metrics option on the left hand menu to open the page as seen below to view all metrics
 
-![Metrics](/screenshots/Metrics.png)
+![Metrics](/screenshots/Amazon%20Web%20Services/Metrics.png)
 
 3. Select CWAgent in the Custom Namespaces. Here the metrics divided into what they are monitoring. There is a group for disk metrics, a group for CPU metrics, for disk IO metrics and a group for memory and swap metrics. There may be more or less depending on the configuration done.
 
-![CWAgent Metrics](/screenshots/CWAgent%20Metrics.png)
+![CWAgent Metrics](/screenshots/Amazon%20Web%20Services/CWAgent%20Metrics.png)
 
 4. Select the group for the metric to be monitored and select the particular metric to be monitored. It will be displayed on the graph for specified time period as seen below:
 
-![Metrics Graph](https://github.com/arinjay97/IIC-Internship/blob/master/screenshots/Metrics%20Graph.png)
+![Metrics Graph](/screenshots/Amazon%20Web%20Services/Metrics%20Graph.png)
 
 Here the percentage of memory used by the instance is being shown as a function of time for a custom time period as a line graph.
 
@@ -142,4 +142,4 @@ The kind of graph that can be selected are Line, Stacked Area or Number. The lin
 
 5. The graphs can be added to a Dashboard very easily to view easily at a glance as seen in this dashboard
 
-![Insights Dashboard](/screenshots/Insights%20Dashboard%20Metrics.png)
+![Insights Dashboard](/screenshots/Amazon%20Web%20Services/Insights%20Dashboard%20Metrics.png)

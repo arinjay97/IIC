@@ -68,4 +68,4 @@ sudo service httpd start
 ### VIEW THE APPLICATION 
 To view the application on a browser, navigate to the public IPv4 address or the public IPv4 DNS of the instance and the Yii2 application homepage should be visible.
 
-![Yii2 Application hosted on Apache Server home page of EC2 instance with php-fpm](/screenshots/Yii2%20EC2.jpg)
+![Yii2 Application hosted on Apache Server home page of EC2 instance with php-fpm](/screenshots/Amazon%20Web%20Services/Yii2%20EC2.jpg)

@@ -15,7 +15,7 @@ SES -> SNS -> AWS Lambda -> DynamoDB
 
 2. Select **Verify a New Email Address** and enter an email of choice.
 
-![SES Console](/screenshots/SES%20console.png)
+![SES Console](/screenshots/Amazon%20Web%20Services/SES%20console.png)
 
 3. Login to the [SNS Console](https://ap-south-1.console.aws.amazon.com/sns/v3/home?region=ap-south-1#/topics) and select `Topic -> Create a new Topic`
 
@@ -28,7 +28,7 @@ SES -> SNS -> AWS Lambda -> DynamoDB
     -Complaints
     -Deliveries
 
-![SNS Config](/screenshots/SNS%20config.png)
+![SNS Config](/screenshots/Amazon%20Web%20Services/SNS%20config.png)
 
 SES is now connected to the SNS topic. Whenever an email is sent from the verified email address, the response notification is sent to the SNS topic.
 
@@ -48,7 +48,7 @@ SES is now connected to the SNS topic. Whenever an email is sent from the verifi
 
 4.Choose the AWS service trusted entity type, choose Lambda, and then choose Next: Permissions.
 
-![Create Role](/screenshots/Create%20role.png)
+![Create Role](/screenshots/Amazon%20Web%20Services/Create%20role.png)
 
 5.Choose the **AWSLambdaBasicExecutionRole** managed policy, and then choose Next.
 
@@ -60,7 +60,7 @@ SES is now connected to the SNS topic. Whenever an email is sent from the verifi
 
 9. In the Visual editor, choose the Service DynamoDB and the action PutItem under the Write category. Under resources, choose Add ARN and then provide the DynamoDB table ARN created earlier.
 
-![Inline Policy](/screenshots/Inline%20Policy.png)
+![Inline Policy](/screenshots/Amazon%20Web%20Services/Inline%20Policy.png)
 
 10. Choose Review, provide a policy name, and then choose Create policy.
 
@@ -73,7 +73,7 @@ SES is now connected to the SNS topic. Whenever an email is sent from the verifi
 
 3. Choose the role created earlier under **Permissions**.
 
-![Create Function](/screenshots/Create%20Function.png)
+![Create Function](/screenshots/Amazon%20Web%20Services/Create%20Function.png)
 
 4. Set up a new function using the following code. This code checks for the three types of SNS notifications as described at [Amazon SNS Notification Examples for Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/notification-examples.html), and puts the SES notification into an entry in a DynamoDB table.
 
@@ -147,7 +147,7 @@ ddb.putItem(itemParamscomp, function(err, data)
 
 6. Choose the topic from the drop-down list in the configuration panel.
 
-![SNS Topic Lambda Subscribe](/screenshots/Lambda%20SNS%20Connection.png)
+![SNS Topic Lambda Subscribe](/screenshots/Amazon%20Web%20Services/Lambda%20SNS%20Connection.png)
 
 
 ## Testing and viewing data in DynamoDB Table
@@ -160,4 +160,4 @@ ddb.putItem(itemParamscomp, function(err, data)
 
 4. Select the table created earlier and choose **Items**. All the emails that have been sent and processed by the Lambda function can be seen in the table now as seen below
 
-![DynamoDB Table](/screenshots/DynamoDB%20Table.png)
+![DynamoDB Table](/screenshots/Amazon%20Web%20Services/DynamoDB%20Table.png)
