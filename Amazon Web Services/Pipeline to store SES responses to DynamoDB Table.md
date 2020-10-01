@@ -156,7 +156,7 @@ ddb.putItem(itemParamscomp, function(err, data)
 
 2. Select a verified email and choose **Send a Test Email**. For more information about sending test emails, the [AWS Documentation](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/send-email-simulator.html) can be referred
 
-3. Once an email is sent, login to the [DynamoDB console](https://console.aws.amazon.com/dynamodb/home) and choose tables.
+3. Once an email is sent, login to the [DynamoDB console](https://console.aws.amazon.com/dynamodb/home) and choose **Tables**.
 
 4. Select the table created earlier and choose **Items**. All the emails that have been sent and processed by the Lambda function can be seen in the table now as seen below
 
