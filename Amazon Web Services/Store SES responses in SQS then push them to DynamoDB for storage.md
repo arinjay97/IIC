@@ -22,11 +22,11 @@ Follow the guide [Store SES Notifications in DynamoDB table](/Amazon%20Web%20Ser
 
 3. Login to the [IAM Console](https://console.aws.amazon.com/iam/home?) and in the navigation pane choose Roles, and then choose **Create Role**.
 
-4.Choose the AWS service trusted entity type, choose Lambda, and then choose Next: Permissions.
+4. Choose the AWS service trusted entity type, choose Lambda, and then choose Next: Permissions.
 
 ![Create Role](/screenshots/Amazon%20Web%20Services/Create%20role.png)
 
-5.Choose **AWSLambdaBasicExecutionRole, AWSLambdaSQSQueueExecutionRole and AmazonSQSFullAccess** managed policies, and then choose Next.
+5. Choose **AWSLambdaBasicExecutionRole, AWSLambdaSQSQueueExecutionRole and AmazonSQSFullAccess** managed policies, and then choose Next.
 
 6. Provide a name for the role of your choice, and then complete the creation of the role.
 
@@ -51,7 +51,7 @@ Follow the guide [Store SES Notifications in DynamoDB table](/Amazon%20Web%20Ser
 
 ![Creating Queue](/screenshots/Amazon%20Web%20Services/Create%20Queue.png)
 
-3. Choose the queue just created and choose **Subscribe to Amazon SNS Topic**. In the drop down menu, choose the topic created previously.
+3. Go back to the console homepage, select the queue just created and choose **Subscribe to Amazon SNS Topic**. In the drop down menu, choose the topic created previously.
 
 
 ## Create AWS Lambda functionto process SES notifications
@@ -152,7 +152,7 @@ def lambda_handler(event, context):
     - Under **Event Source** choose **Schedule** and in the **Fixed rate of** enter the value as 5 minutes.
     - Under **Targets** choose **Lambda Function** and select the corresponding Lambda function created earlier
 
-![Create Rule](\screenshots\Amazon%20Web%20Services\Create%20Event%20Rule.png)
+![Create Rule](/screenshots/Amazon%20Web%20Services/Create%20Event%20Rule.png)
 
 3. Choose **Configure Details**, enter a name for the rule when prompted and choose Create Rule.
 
@@ -165,6 +165,8 @@ def lambda_handler(event, context):
 3. Login to the [SQS Console](https://ap-south-1.console.aws.amazon.com/sqs/v2/home) and select the queue previously created.
 
 4. Choose **Send and receive messages** and in the next page select **Poll for messages**. This will show the notifications from SES that are currently stored in the queue. After 5 minutes, they will be processed and stored in the DynamoDB table and then be deleted from the queue.
+
+![Poll for Messages](/screenshots/Amazon%20Web%20Services/Poll%20for%20Messages.png)
 
 3. Login to the [DynamoDB console](https://console.aws.amazon.com/dynamodb/home) and choose **Tables**.
 
