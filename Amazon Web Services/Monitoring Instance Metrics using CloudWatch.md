@@ -4,7 +4,7 @@ Collectd is a popular open-source solution with plug-ins that can gather system 
 
 To monitor metrics using collectD, it needs to be installed to the instance first through the command
 ```bash
-sudo yum install -y collectd
+$ sudo yum install -y collectd
 ```
 
 ## CONFIGURING COLLECTD AND CLOUDWATCH TO MONITOR METRICS
@@ -93,12 +93,12 @@ More details can be found on what exactly the different levels monitor at [colle
 
 7. Restart the Apache server with the command 
 ```bash
-sudo service httpd restart
+$ sudo service httpd restart
 ```
 
 8. Load the Cloudwatch Agent with the new configuration file by running the command
 ```bash
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+$ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
 ```
 
 
@@ -110,12 +110,12 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 
 3. Restart the Apache server with the command 
 ```bash
-sudo service httpd restart
+$ sudo service httpd restart
 ```
 
 4. Load the Cloudwatch Agent with the new configuration file by running the command
 ```bash
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+$ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
 ```
 
 

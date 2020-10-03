@@ -8,14 +8,14 @@
 
 2. Login to the Elasticsearch EC2 instance instance via SSH 
   - Using terminal for Linux
-  ```
-   ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
+  ```bash
+  $ ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
   ```
   - Using PUTTY for Windows
   
 3. Download and install the public signing key:
 ```bash
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+$ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 4. Create a file called `elasticsearch.repo` in the `/etc/yum.repos.d/` directory and add the following content to it:
@@ -32,7 +32,7 @@ type=rpm-md
 
 5. The repository is ready to be used. Install Elasticsearch with the following command:
 ```bash
-sudo yum install --enablerepo=elasticsearch elasticsearch
+$ sudo yum install --enablerepo=elasticsearch elasticsearch
 ```
 
 6. Configure Elasticsearch by specifying the private IPv4 DNS of the EC2 instance as the network host in `/etc/elasticsearch/elasticsearch.yml`
@@ -51,20 +51,20 @@ http.port: 9200
 
 7. Start the Elasticsearch service with the following command.
 ```bash
-sudo systemctl start elasticsearch.service
+$ sudo systemctl start elasticsearch.service
 ```
 To verify if the service is running properly, navigate to `<Public IPv4 address>:9200`
 
 8. Login to the Kibana EC2 instance via SSH
  - Using terminal for Linux
   ```
-   ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
+  $ ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
   ```
   - Using PUTTY for Windows
   
 9. Download and install the public signing key:
 ```bash
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+$ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 10. Create a file called `kibana.repo` in the `/etc/yum.repos.d/` directory and add the following content to it:
@@ -81,7 +81,7 @@ type=rpm-md
 
 11. The repository is ready to be used. Install Kibana with the following command:
 ```bash
-sudo yum install kibana
+$ sudo yum install kibana
 ```
 
 12. Configure Kibana by specifying the public IPv4 DNS of the Elasticsearch EC2 instance as the network host in `/etc/kibana/kibana.yml`
@@ -95,13 +95,13 @@ elasticsearch.hosts: ["http://<Public IPv4 Address of Elasticsearch EC2 Instance
 14. Login to the Logstash EC2 instance via SSH
  - Using terminal for Linux
   ```
-   ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
+  $ ssh -i /path/my-key-pair.pem my-instance-user-name@my-instance-public-dns-name
   ```
   - Using PUTTY for Windows
 
 15. Download and install the public signing key:
 ```bash
-rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
+$ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 16. Create a file called `logstash.repo` in the `/etc/yum.repos.d/` directory and add the following content to it:
@@ -118,8 +118,8 @@ type=rpm-md
 
 17. The repository is ready to be used. Logstash requires Java to function. Install java and logstash with the following commands:
 ```bash
-sudo yum install java
-sudo yum install logstash
+$ sudo yum install java
+$sudo yum install logstash
 ```
 
 18. Configure Logstash by specifying the `http.host` as the Public IPv4 address of the Logstash EC2 Instance

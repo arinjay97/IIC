@@ -77,7 +77,7 @@ SES is now connected to the SNS topic. Whenever an email is sent from the verifi
 
 4. Set up a new function using the following code. This code checks for the three types of SNS notifications as described at [Amazon SNS Notification Examples for Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/notification-examples.html), and puts the SES notification into an entry in a DynamoDB table.
 
-```node
+```javascript
 console.log('Loading event');
 var aws = require('aws-sdk');
 var ddb = new aws.DynamoDB({params: {TableName: '<TABLE NAME HERE>'}});

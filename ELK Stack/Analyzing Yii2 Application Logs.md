@@ -5,10 +5,10 @@ First we need to setup the yii2 application so that it can generate logs we can 
 The setup is not that hard and just follows a few steps. Run the following commands in order to install it.
 
 ```bash
-curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-cd /var/www/html
-composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+$ curl -sS https://getcomposer.org/installer | php
+$ sudo mv composer.phar /usr/local/bin/composer
+$ cd /var/www/html
+$ composer create-project --prefer-dist yiisoft/yii2-app-basic basic
 ```
 
 Once it is installed, visit `localhost/basic/web` to generate logs for the application. The logs generated are stored at `./basic/runtime/logs/app.log`.
@@ -107,7 +107,7 @@ output {
 
 Once this file is created, save it with a .conf extension. To run logstash with the above configuration run the following command in terminal
 
-`/usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>`
+`$ /usr/share/logstash/bin/logstash -f <PATH TO CONFIGURATION FILE>`
 
 After Logstash adds all log entries to Elasticsearch, the index is created and visible in Kibana. To view the logs and create visualizations we need an index pattern in Kibana. Once that is created the logs can be viewed in the `Kibana -> Discover` section. Using the available fields section, we can filter the logs based on their value.
 

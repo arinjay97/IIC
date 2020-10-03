@@ -9,17 +9,17 @@ A log group and log stream have to be created in Cloudwatch. This is where the a
 
 2. As Amazon Linux 2 AMI is being used, run the following command
 ```bash
-sudo wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
+$ sudo wget https://s3.amazonaws.com/amazoncloudwatch-agent/amazon_linux/amd64/latest/amazon-cloudwatch-agent.rpm
 ```
 
 3. Install the package
 ```bash
-sudo rpm -U ./amazon-cloudwatch-agent.rpm
+$ sudo rpm -U ./amazon-cloudwatch-agent.rpm
 ```
 
 4. Run the CloudWatch Agent configuration Wizard by using the following command 
 ```bash
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+$ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
 ```
 
 5. Configure the Agent as required. As just the application logs are being sent, select NO for collecting metrics and stats from CollectD. When prompted to add additional log files to monitor, select YES.
@@ -54,7 +54,7 @@ The multiline start pattern
 
 8. Start the agent and upload the files to cloudwatch with the following command
 ```bash
-sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+$ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
 ```
 
 9. This will start the agent and create the log stream and log group to subsequently store the Yii2 application logs. This can be viewed at the [Cloudwatch Management Console](https://ap-south-1.console.aws.amazon.com/cloudwatch/home)
