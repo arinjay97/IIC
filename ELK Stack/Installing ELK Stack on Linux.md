@@ -39,3 +39,4 @@ $ sudo systemctl start kibana
 10. Navigate to [Kibana on browser](localhost:5601) on a browser to access the Console and start with analysis and visualizations
 
 ![Kibana in browser](/screenshots/ELK/Kibana.jpg)
+ 

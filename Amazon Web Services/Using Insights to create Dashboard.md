@@ -17,7 +17,7 @@ For example to get IP from the message
 
 2020-08-18 10:39:09 [92.118.160.1][-][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 92.118.160.1
 
-We can use the query
+We can use the query 
 ```sql
  filter @message like 'warning'
 | parse @message "[*]" as ip

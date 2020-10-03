@@ -142,3 +142,4 @@ To get visualization with particular details, such as for only a particular valu
 ![KQL Visualization](/screenshots/ELK/KQL%20VIsualization%20Data%20Table.png)
 
 The visualizations can then be organized into a dashboard to view all the information at a single glance. In the dashboard we can also select the time frame to view log entries only from that time period
+ 

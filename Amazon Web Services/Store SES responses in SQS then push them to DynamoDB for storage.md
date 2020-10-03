@@ -4,7 +4,7 @@ The requirement of the task was to send e-mail from the **Simple Email Service (
 
 The pipeline being created is 
 ```
-SES -> SNS -> SQS -> AWS Lambda -> DynamoDB
+SES -> SNS -> SQS -> AWS Lambda -> DynamoDB 
 ```
 
 Follow the guide [Store SES Notifications in DynamoDB table](/Amazon%20Web%20Services/Pipeline%20to%20store%20SES%20responses%20to%20DynamoDB%20Table.md) to connect SES with a SNS Topic

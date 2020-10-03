@@ -2,7 +2,7 @@
 
 The requirement of this task was to create a docker image of a basic Yii2 application being hosted on Apache Web Server along with all of its required parameters.
 
-The required parameters are:
+The required parameters are: 
     - Apache Web Server
     - php 7.4
     - Application being served using php-fpm

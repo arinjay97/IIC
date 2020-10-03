@@ -74,3 +74,4 @@ Inside the Log Stream, all the log messages can be viewed in the Log Events sect
 The log messages can be expanded to see their entire content
 
 ![Log Messages](/screenshots/Amazon%20Web%20Services/Cloudwatch%20Log%20Message.jpg)
+ 

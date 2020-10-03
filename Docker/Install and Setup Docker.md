@@ -4,7 +4,7 @@ The easiest way to create a Docker image is to create a Dockerfile for the same.
 
 For more information about the different types of commands that a Dockerfile supports, [a handy cheat sheet](https://kapeli.com/cheat_sheets/Dockerfile.docset/Contents/Resources/Documents/index) can be referred to.
 
-## INSTALLING DOCKER
+## INSTALLING DOCKER 
 
 To install Docker on a Debian based Linux distro (such as Ubuntu), follow the steps below:
 

@@ -161,3 +161,4 @@ ddb.putItem(itemParamscomp, function(err, data)
 4. Select the table created earlier and choose **Items**. All the emails that have been sent and processed by the Lambda function can be seen in the table now as seen below
 
 ![DynamoDB Table](/screenshots/Amazon%20Web%20Services/DynamoDB%20Table.png)
+ 

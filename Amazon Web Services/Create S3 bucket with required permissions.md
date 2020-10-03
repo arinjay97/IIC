@@ -164,4 +164,4 @@ s3 = boto3.client('s3')
 bucket = "<NAME OF BUCKET>"
 
 s3.download_file(bucket, "PATH/TO/OBJECT/IN/BUCKET", "DOWNLOAD LOCATION FOR FILE")
-```
+``` 

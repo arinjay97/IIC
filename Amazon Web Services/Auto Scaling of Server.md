@@ -30,4 +30,4 @@ To create and configure the Auto Scaling group in a way such that the resources 
 
 8. But with other policy types there are more customizations that can be made regarding how the scaling should be done for example seen below:
 
-![Step Scaling](/screenshots/Amazon%20Web%20Services/Step%20Scaling.png)
+![Step Scaling](/screenshots/Amazon%20Web%20Services/Step%20Scaling.png) 

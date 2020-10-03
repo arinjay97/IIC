@@ -16,4 +16,4 @@ Quick Links to the different tasks completed using Amazon Web Services:
 
 7. [Create S3 Bucket with required permissions](/Amazon%20Web%20Services/Create%20S3%20bucket%20with%20required%20permissions.md)
 
-8. [Auto Scaling of a server](/Amazon%20Web%20Services/Auto%20Scaling%20of%20Server.md)
+8. [Auto Scaling of a server](/Amazon%20Web%20Services/Auto%20Scaling%20of%20Server.md) 

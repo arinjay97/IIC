@@ -71,3 +71,4 @@ To be able to view in Kibana and create visualizations, we need to create an Ind
 Now the logs are ready to be viewed by us for analysis as well as being used to create visualizations, and after that a dashboard in Kibana. In the `Kibana -> Discover` section in the main menu, on selecting the apache index pattern just created, we will be able to view at the parsed and stored logs.
 
 ![Discover](/screenshots/ELK/Discover%20Apache.png) 
+ 
