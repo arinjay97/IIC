@@ -1,6 +1,6 @@
 # AUTO SCALING OF A SERVER
 
-The requirements of the task are:
+The requirements of the task are
     -Serve basic Yii2 application on Apache Web Server using an EC2 instance 
     -Configure Auto Scaling for the server whenever the load reaches 50%
 
