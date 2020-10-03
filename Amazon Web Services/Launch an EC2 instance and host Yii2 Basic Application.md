@@ -1,7 +1,7 @@
 # HOST YII2 BASIC APPLICATION ON AN EC2 INSTANCE
 
 The goal of this task is to launch an Amazon Web Services EC2 instance **with Amazon Linux 2 AMI** and hosting the Yii2 basic application on the Apache Server. The steps to accomplish the same are:
-/
+
 ### Launch and connect to EC2 Instance
 1. Visit the [EC2 Console](https://ap-south-1.console.aws.amazon.com/ec2) and select **Launch Instance**
 2. Select **Amazon Linux 2 AMI**
