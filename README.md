@@ -9,8 +9,8 @@ In this repository I have created different directories for each of them to docu
 
 
 #### Quick Links to the Sections
-> [ELK Stack](https://github.com/arinjay97/IIC-Internship/tree/master/ELK%20Stack)
+[ELK Stack](https://github.com/arinjay97/IIC-Internship/tree/master/ELK%20Stack)
 
-> [Amazon Web Services](https://github.com/arinjay97/IIC-Internship/tree/master/Amazon%20Web%20Services)
+[Amazon Web Services](https://github.com/arinjay97/IIC-Internship/tree/master/Amazon%20Web%20Services)
 
-> [Docker](https://github.com/arinjay97/IIC-Internship/tree/master/Docker)
+[Docker](https://github.com/arinjay97/IIC-Internship/tree/master/Docker)
