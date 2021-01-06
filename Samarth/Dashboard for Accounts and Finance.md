@@ -10,3 +10,10 @@ The Payroll Management System will display metrics related to the payroll such a
 The demo dashboard in samarth looks as follows:
 
 ![Demo Payroll Dashboard](/screenshots/Samarth%20Dashboards/Dashboard%20for%20Accounts%20and%20Finance/Payroll%20Demo%20Portal.png)
+
+The metrics being displayed in the Payroll Dashboard in Kibana are as follows:
+
+| S No. | METRIC | DESCRIPTION | FIELDS AND TABLE | QUERY |
+| --- | --- | --- | --- | --- |
+| 1 | Nature of Payroll | Shows the distribution of employees in payroll on the basis of their nature | payroll_budget_head.nature | 
+select nature from payroll_budget_head |
