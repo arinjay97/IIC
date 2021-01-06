@@ -9,4 +9,4 @@ The Payroll Management System will display metrics related to the payroll such a
 
 The demo dashboard in samarth looks as follows:
 
-![Demo Payroll Dashboard](/screenshots\Samarth%20Dashboards\Dashboard%20for%20Accounts%20and%20Finance\Payroll%20Demo%20Portal.png)
+![Demo Payroll Dashboard](/screenshots/Samarth%20Dashboards/Dashboard%20for%20Accounts%20and%20Finance/Payroll%20Demo%20Portal.png)
