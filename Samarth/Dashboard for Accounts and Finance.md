@@ -15,5 +15,4 @@ The metrics being displayed in the Payroll Dashboard in Kibana are as follows:
 
 | S No. | METRIC | DESCRIPTION | FIELDS AND TABLE | QUERY |
 | --- | --- | --- | --- | --- |
-| 1 | Nature of Payroll | Shows the distribution of employees in payroll on the basis of their nature | payroll_budget_head.nature | 
-select nature from payroll_budget_head |
+| 1 | Nature of Payroll | Shows the distribution of employees in payroll on the basis of their nature | payroll_budget_head.nature | select nature from payroll_budget_head |
