@@ -14,5 +14,6 @@ The demo dashboard in samarth looks as follows:
 The metrics being displayed in the Payroll Dashboard in Kibana are as follows:
 
 | S No. | METRIC | DESCRIPTION | FIELDS AND TABLE | QUERY |
-| --- | --- | --- | --- | --- |
+| :---: | :---: | :---: | :---: | :---: |
 | 1 | Nature of Payroll | Shows the distribution of employees in payroll on the basis of their nature | payroll_budget_head.nature | select nature from payroll_budget_head |
+| 2 | Salary Details | Shows the details of the amount paid in salary for every month of every year separately | payroll_final_processed_salary.year <br/> payroll_final_processed_salary_breakup.net_pay <br/> payroll_final_processed_salary.month <br/> payroll_final_processed_salary_breakup.employee_id | select month, year from payroll_final_processed_salary <br/> select net_pay, employee_id from payroll_final_processed_salary_breakup |
